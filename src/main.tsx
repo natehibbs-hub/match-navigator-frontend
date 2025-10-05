@@ -13,6 +13,13 @@ import Chat from './pages/Chat'
 import Health from './pages/Health'
 import ProtectedRoute from './components/ProtectedRoute'
 
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
+
 const router = createBrowserRouter([
   { path: '/', element: <App />, children: [
     { index: true, element: <Home /> },
